@@ -152,7 +152,8 @@ ul {
   margin-right: 73px;
   gap: 20.45px;
 }
-.intro__text-block:last-of-type {
+.special{
+  display: flex;
   scale: 0.9;
   margin-right: 50px;
 }
@@ -190,10 +191,73 @@ ul {
 .intro__content {
   display: flex;
 }
+.intro {
+  margin-bottom: 60px;
+}
 /*   Header end */
 
 /* Main start */
 
+.main__title{
+  text-align: center;
+  color: #000;
+  font-family: 'MR';
+  font-size: 30px;
+  font-weight: 400;
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+}
+.main__content{
+  display: flex;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 485px);
+  margin-top: 40px;
+}
+
+.main__content-item{
+  /* delete this then */
+/*   width: 416px;
+  height: 485px; */
+  /* till here */
+  border-radius: 10px;
+  background: var(--lightGray);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+.main__item-discount{
+  width: 120px;
+  height: 50px;
+  border-radius: 10px;
+  background: var(--darkGray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.main__text-block{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 15px;
+  scale: 1.1;
+}
+.icon{
+  position: absolute;
+  top: 20px;
+  right: 19px;
+}
+.icon:last-of-type{
+  top: 90px;
+}
 /* Main end */
 
 /* Footer start */
@@ -202,7 +266,7 @@ ul {
 
 /* Media start */
 
-@media (max-width: 412px) {
+/* @media (max-width: 412px) {
   .header__nav-box {
     flex-direction: column;
   }
@@ -218,6 +282,73 @@ ul {
   .header__nav-box {
     width: 100%;
   }
+} */
+
+@media (max-width: 412px) {
+  .header__nav-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header__nav-list {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .header__nav-link {
+    margin: 5px 0;
+  }
+
+  .right__menu-list {
+    margin-left: 0;
+  }
+
+  .intro__content {
+    flex-direction: column;
+  }
+
+  .intro__item,
+  .intro__item-big {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .intro__item-big {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .intro__watch {
+    margin: 20px;
+    margin-right: 26px;
+    
+  }
+
+  .intro__text-block {
+    margin-right: 46px;
+    text-align: center;
+  }
+
+  .special {
+    scale: 0.9;
+    margin-right: 30px; /* or adjust as needed */
+    flex-direction: column;
+  }
+
+  .item__discount {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 10px;
+  }
+
+  .discount {
+    font-size: 18px;
+  }
 }
 
-/* Meida end */
+/* Media end */
