@@ -372,6 +372,71 @@ ul {
 
 /* Footer start */
 
+footer{
+  background: var(--darkGray);
+  height: 500px;
+  margin-top: 50px;
+}
+.footer__content{
+  display: flex;
+}
+.footer__title{
+    color: #FFF;
+    font-family: 'MB';
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 23px;
+    text-transform: uppercase;
+}
+.footer__list-link{
+    color: #FFF;
+    font-family: 'MR';
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.footer__list-title{
+    color: #FFF;
+    font-family: 'MR';
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2.2px;
+    text-transform: uppercase;
+}
+.contact__info-number,
+.contact__info{
+  color: #FFF;
+  font-family: 'MR';
+  font-size: 18px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+}
+.email{
+  color: #FFF;
+  font-family: 'MR';
+  font-size: 18px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+}
+.media__title{
+  color: #FFF;
+  font-family: 'MR';
+  font-size: 18px;
+  font-weight: 400;
+  font-variant: all-small-caps;
+  letter-spacing: 2.5px;
+  width: 240.31px;  
+}
+.footer__item1{
+  margin-right: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer__item2{
+  margin-right: 217px;
+}
+
 /* Footer end */
 
 /* Media start */
