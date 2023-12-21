@@ -472,7 +472,7 @@ ul {
   }
   .main__content-item{
     display: flex;
-    width: 400px;
+    width: 90%;
     height: 485px;
   }
   .news__block{
@@ -483,13 +483,25 @@ ul {
     width: 100%;
   }
   .news__image{
-    flex-wrap: wrap;
+/*     flex-wrap: wrap; */
+    width: 100%;
   }
   .news__text-block{
     width: 100%;
     flex-wrap: wrap;
-    margin-left: 20px;
+    margin-left: 0px;
+
   }
+  .news__title{
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .news__text{
+    margin: 0;
+    width: 100%;
+  }
+
 }
 
 /* Media end */
